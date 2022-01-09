@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "ArrayMesh",
+"class": "ConeMesh",
+"language": "GDScript",
+"path": "res://meshes/ConeMesh.gd"
+}, {
+"base": "ArrayMesh",
+"class": "FibonacciSphereMesh",
+"language": "GDScript",
+"path": "res://meshes/FibonacciSphereMesh.gd"
+}, {
+"base": "ArrayMesh",
+"class": "TorusMesh",
+"language": "GDScript",
+"path": "res://meshes/TorusMesh.gd"
+} ]
+_global_script_class_icons={
+"ConeMesh": "",
+"FibonacciSphereMesh": "",
+"TorusMesh": ""
+}
+
+[application]
+
+config/name="Mesh Generators"
+run/main_scene="res://test/World.tscn"
+config/icon="res://test/icon.png"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://test/default_env.tres"
